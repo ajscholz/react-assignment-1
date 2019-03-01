@@ -1,10 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
 
 const UserInput = (props) => {
-  return (
-    <div />
-  )
+  const style = {
+    border: '2px solid red',
+  };
+  return <input
+    type='text'
+    style={style}
+    onChange={props.changed}
+    value={props.username} />
 }
 
-export default UserInput
+export default UserInput;
